@@ -29,9 +29,8 @@
 <!-- ---------------------------------------------|-------------------------------------------- -->
 ## 🧮 **Aufgabenstellung:**  
 - Schreiben Sie ein Programm, welches vom Benutzer einen beliebigen Text und ein weiteres Zeichen „Split“ einliest.  
-- Anschließend splitten Sie den eingegebenen Text, nach jedem Vorkommen des Zeichens „Split“ im Text auf.  
-
-   >  <sub> [..*weiterführende Quelle*..] </sub> [ **³** ]()
+- Anschließend splitten Sie den eingegebenen Text, nach jedem Vorkommen des Zeichens „Split“ im Text auf.
+  >  <sub> [..*weiterführende Quelle*..] </sub> [ **³** ]()
 
 ---
  
@@ -54,9 +53,9 @@
             
   **⒈**)  Die ***Benutzereingaben dürfen*** im gesamten Programm ***nicht verändert werden*** und müssen erhalten bleiben.     
 
-  **⒉**)  Zur Lösung dieser Aufgabe dürfen Sie ***nicht die Standard-Methoden von String verwenden***!              
-   >
-   > <sub> [..*weiterführende Quelle*..] </sub> [ **⁵** ]()  
+  **⒉**)  Zur Lösung dieser Aufgabe dürfen Sie ***nicht die Standard-Methoden von String verwenden***! 
+     
+   >  <sub> [..*weiterführende Quelle*..] </sub> [ **⁵** ]()  
 
  ---
 
