@@ -30,7 +30,8 @@
 ## 🧮 **Aufgabenstellung:**  
 - Schreiben Sie ein Programm, welches vom Benutzer einen beliebigen Text und ein weiteres Zeichen „Split“ einliest.  
 - Anschließend splitten Sie den eingegebenen Text, nach jedem Vorkommen des Zeichens „Split“ im Text auf.  
-  >  <sub> [..*weiterführende Quelle*..] </sub> [ **³** ]()
+
+   >  <sub> [..*weiterführende Quelle*..] </sub> [ **³** ]()
 
 ---
  
@@ -41,7 +42,6 @@
    |   *Benutzerschnittstelle* :    |
    | :-----------------------------------------------------------------------------------------------------------------: |
    |  ![**Ausgabebeispiel 📎**](https://github.com/IxI-Enki/Uebung-041/assets/138018029/e56fe121-f1a6-4d99-a302-7f2b91cbd291)
-()
   > <sub> [..*weiterführende Quelle*..] </sub> [ **⁴** ]()
 
 ---
