@@ -40,7 +40,8 @@
 
    |   *Benutzerschnittstelle* :    |
    | :-----------------------------------------------------------------------------------------------------------------: |
-   |  ![**Ausgabebeispiel 📎**](https://github.com/IxI-Enki/Uebung-041work-directory/Angabe.png)
+   |  ![**Ausgabebeispiel 📎**](https://github.com/IxI-Enki/Uebung-041/assets/138018029/e56fe121-f1a6-4d99-a302-7f2b91cbd291)
+()
   > <sub> [..*weiterführende Quelle*..] </sub> [ **⁴** ]()
 
 ---
@@ -72,12 +73,12 @@
          -   3 : 2 = 1,    //  Rest = 1    
          -   1 : 2 = 0,    //  Rest = 1     
       ```                                 
- -->
 
+-->
 
 <!-- ---------------------------------------------|-------------------------------------------- -->
 
-
+<!--
 # *SPOILER* <sub><sup> → [*Lösung*](https://github.com/IxI-Enki/Uebung-<<AUSFÜHRBAREDAT>>.cs) <sup></sub>:
 
 
@@ -114,3 +115,5 @@ namespace <<Bezeichnung>>   //
 > <sub> [..*weiterführende Quelle*..] </sub> [ **⁷** ]()
 
 </dertails>
+
+-->
