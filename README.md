@@ -1,37 +1,35 @@
 <!--              READE -> VORLAGE Uebungen: Programmieren & Software Engineering              -->
 
-# Uebung-[`#nr`]()  --  [***`Bezeichnung`***]()  
+# Uebung-*041*  --  [*String Separation*]()  
 
 <!-- ---------------------------------------------|-------------------------------------------- -->
-###### 📎[**Angabe**](https://github.com/IxI-Enki/Uebung-<<<Verzeichniss>>>.pdf) *.pdf*
+###### 📎[**Angabe**](https://github.com/IxI-Enki/Uebung-041/work-directory/41-SimpleSplit.pdf) *.pdf*
 <sup><sub> 
----
+--- 
 </sub></sup>
 
 <!-- ---------------------------------------------|-------------------------------------------- -->
 ## 📊 Lernziele:  
-  > ↳ `◌ Punkte einfügen`  
-  > ↳ ` ⋯ `  
-  >  
-  >  <sub> [..*weiterführende Quelle*..] </sub> [ **¹** ]()
+-  ↳ Stringbearbeitung  
+     >  <sub> [..*weiterführende Quelle*..] </sub> [ **¹** ]()
 
+<!--
 <sup><sub> </sub></sup>
 ---
 
+  
 ## ✅ Vertiefung:  
   > ↳ `◌ Punkte einfügen`  
   > ↳ ` ⋯ `  
-  >  
+  >  ..
   >  <sub> [..*weiterführende Quelle*..] </sub> [ **²** ]()
 
+-->
 ---
-
 <!-- ---------------------------------------------|-------------------------------------------- -->
 ## 🧮 **Aufgabenstellung:**  
-  >  *Beschreibung der Aufgabe* einfügen  
-  >  *Programablauf* und weitere ***Anforderungen***  
-  >  ` ⋯ `  
-  >  
+- Schreiben Sie ein Programm, welches vom Benutzer einen beliebigen Text und ein weiteres Zeichen „Split“ einliest.  
+- Anschließend splitten Sie den eingegebenen Text, nach jedem Vorkommen des Zeichens „Split“ im Text auf.  
   >  <sub> [..*weiterführende Quelle*..] </sub> [ **³** ]()
 
 ---
@@ -40,10 +38,10 @@
 ## 🔎 **Ausgabe** <sub>*Bsp.*</sub> 
 
 
-   |            ❗ *`direkt in die README einfügen`*   |  
+   |   *Benutzerschnittstelle* :    |
    | :-----------------------------------------------------------------------------------------------------------------: |
-   |  ![**Ausgabebeispiel 📎**](https://github.com/IxI-Enki/Uebung-037/assets/138018029/0e779913-4daa-4784-9edb-46df66a91bad)  |
-> <sub> [..*weiterführende Quelle*..] </sub> [ **⁴** ]()
+   |  ![**Ausgabebeispiel 📎**](https://github.com/IxI-Enki/Uebung-041work-directory/Angabe.png)
+  > <sub> [..*weiterführende Quelle*..] </sub> [ **⁴** ]()
 
 ---
 <!-- ---------------------------------------------|-------------------------------------------- -->
@@ -53,10 +51,16 @@
  
  ### *Ablauf:*               
             
- ⒈)  `Punkt einfügen`   
- ⒉) ` ⋯ `               
- ⒊) ` ⋯ `               
+  **⒈**)  Die ***Benutzereingaben dürfen*** im gesamten Programm ***nicht verändert werden*** und müssen erhalten bleiben.     
+
+  **⒉**)  Zur Lösung dieser Aufgabe dürfen Sie ***nicht die Standard-Methoden von String verwenden***!              
+   >
+   > <sub> [..*weiterführende Quelle*..] </sub> [ **⁵** ]()  
+
+ ---
+
   
+<!--
  #### 
    - ***zum Beispiel:***
      >  <sub>*Die Dezimalzahl*</sub> **6**  <sub>**entspricht der Binärzahl**</sub> **110**  
@@ -68,9 +72,7 @@
          -   3 : 2 = 1,    //  Rest = 1    
          -   1 : 2 = 0,    //  Rest = 1     
       ```                                 
- 
- > <sub> [..*weiterführende Quelle*..] </sub> [ **⁵** ]()
- ---
+ -->
 
 
 <!-- ---------------------------------------------|-------------------------------------------- -->
