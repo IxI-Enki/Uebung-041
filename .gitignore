@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/StringSeparation/StringSeparation.sln
+/StringSeparation/StringSeparation/StringSeparation.csproj
+/StringSeparation/StringSeparation/obj
+/StringSeparation/.vs/StringSeparation
+/.vs
+/StringSeparation/StringSeparation/bin/Debug/net8.0
