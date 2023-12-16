@@ -67,11 +67,11 @@
 
 
 ### 🖥 **Ausgabe**: 
-   |            * meine Ausgabe: *  |   
+   |            *meine Ausgabe:*  |   
    |--------------------------------|
    |  ![**Ausgabe 📎**](https://github.com/IxI-Enki/Uebung-041/assets/138018029/c3f89232-87fd-4222-a15d-6a1a6b30793c)  |
 
-<!--> <sub> [..*weiterführende Quelle*..] </sub> [ **⁶** ]()-->
+<!-- <sub> [..*weiterführende Quelle*..] </sub> [ **⁶** ]()-->
 
 ---
 
