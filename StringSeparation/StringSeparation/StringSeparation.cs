@@ -1,4 +1,4 @@
-﻿/*-----------------------------------------------------------------------------
+/*-----------------------------------------------------------------------------
  *                      HTBLA-Leonding / Class: 3ACIF                          
  *-----------------------------------------------------------------------------
  *                      Jan Ritt                                               
@@ -26,61 +26,73 @@ namespace StringSeparation  //
       Console.OutputEncoding = Encoding.UTF8;    //  Unicode Symbols
 
       /*----------------------------- VARIABLES -----------------------------*/
-      string userInput, textCache, splitCache = "";    //
-      char userSplit, splitChar;                       //  
+      string userInput, textCache,                     //
+             splitCache = "";                          //
+      char splitChar;                                  //  
       int index;                                       //
-      bool abort = false;                              //
+      bool abortInput = false,                         //  abort condition for input
+           abortSplit = true;                          //  abort condition if SplitChar is not found in Text
 
       /*-------------------------------- HEAD -------------------------------*/
       Console.Clear();
       Console.Write("\n                 String Separation                   " +
       /* cWidth: */ "\n=====================================================");
 
-      /*---[in:]-------------------- PROMPT_USER ----------------------------*/
+      /*---[IN:]-------------------- PROMPT_USER ----------------------------*/
       Console.Write("\n Geben Sie den Text ein, den Sie aufsplitten wollen:" +
                     "\n →  ");
       do    //----------------------- GET_INPUT_STRING ----------------------//
       {                                                                      //
-        userInput = Console.ReadLine();    //  text to split + [enter]       //
-        textCache = userInput;             //  📌 cache input                //  
-        abort = (textCache.Length > 1) ? false : true;    // length>1(t:f) = abort(❌:✔) 
-        if (abort)                                 //  if abort = [✔]        //
-        {                                          //____________ ⨽⇣⨼ _______//
+        userInput = Console.ReadLine();                                      //  text to split + [enter]
+        textCache = userInput;                                               //  safe input to cache     
+        abortInput = (textCache.Length > 1) ? false : true;                  //
+        if (abortInput)                                                      //
+        {                                                                    //
           Console.Write($"\n Ihre Eingabe: '{textCache}' ist unteilbar." +   //
-                        $"\n Wiederholen Sie die Eingabe:" +    // ⇣         //
-                        $"\n →  ");                             // ⇣         //
-        }                                                       // ⇣ ________//
-      } while (abort);    //------------------------------------// 🔄 repeat INPUT if abort = ✔
+                        $"\n Wiederholen Sie die Eingabe:" +                 //
+                        $"\n →  ");                                          //
+        }                                                                    //
+      } while (abortInput);                                                  //  repeat INPUT if abortInput = true
 
-      /*--------------------------- GET_INPUT_CHAR --------------------------*/
+      //--------------------------- GET_INPUT_CHAR --------------------------//
       Console.Write("\n Wählen Sie das Zeichen an dem gesplittet werden soll:" +
-                    "\n →  ");                //  
-      splitChar = Console.ReadKey().KeyChar;  //  char✂to✂split 
+                    "\n →  ");                                               //
+      splitChar = Console.ReadKey().KeyChar;                                 //  char ✂ to ✂ split
 
-      /*===[calc:]===========================================================*/
-      for (index = 0; textCache.Length > index; index++)                     // i++ for every char∈input
+
+      //===[CALC:]===========================================================//  test if SplitChar is present in Text
+      index = 0;                                                             //
+      while ((index + 1) < textCache.Length && (abortSplit == true))         //
       {                                                                      //
-        splitCache = "";                                   // 🗑 empty cache
-        while (textCache[index] != splitChar && !abort)    // while abort = [❌]
-        {                                                  //                 ⇣
-          if (textCache.Length != index)    //-------------- length > i --- either
-          {                                                //    ⨽  ⇣  ⨼      ⇣
-            splitCache = splitCache + textCache[index];    // - cache char[i] ⇣
-            index++;                                       // - i++           ⇣
-          }                                 //------------------------------ or
-          else                                             //                 ⇣
-          {                                                //                 ⇣
-            splitCache = splitCache + textCache[index];    // - add char[i] to cache
-            abort = true;                                  // - abort = [✔]  ⇣
-          }                                                //                //
-        }    //--------------------------------------------------------------//  
-                                                                             //
-        //---[out:]-------------------- SOLUTION ----------------------------//
-        Console.Write($"\n {splitCache} ");                                  // tell solution                
-      }    /*================================================================*/
-
+        abortSplit = (textCache[index] == splitChar) ? false : true;         //
+        index++;                                                             //
+      }                                                                      //
+      Console.Write($"\n Das Split-Zeichen '{splitChar}' wurde {(abortSplit ? "nicht gefunden" : "gefunden")} " +
+                     "\n -----------------------------------------------------" +
+                     "\n ");                                                 //
+      if (abortSplit == false)                                               //
+      {                                                                      //
+        // Console.Write("weiter");                                          //
+        index = 0;                                                           //
+        while ((index + 1) <= textCache.Length)                              //
+        {                                                                    //
+          if (splitChar != textCache[index])                                 //
+          {                                                                  //
+            splitCache = splitCache + textCache[index];                      //
+            index++;                                                         //
+          }                                                                  //
+          else                                                               //
+          {                                                                  //
+            Console.Write($"\n {splitCache} ");                              //
+            splitCache = "";                                                 //
+            index++;                                                         //
+          }                                                                  //
+        }                                                                    //
+        Console.Write($"\n {splitCache} ");                                  //
+      }                                                                      //
       /*-------------------------------- END --------------------------------*/
-      Console.Write("\n Zum beenden Eingabetaste drücken..");
+      Console.Write("\n=====================================================" +
+                    "\n Zum beenden Eingabetaste drücken..");
       Console.ReadLine();    //  wait for [enter]
       Console.Clear();       //
     }
